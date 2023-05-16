@@ -75,15 +75,16 @@ Template: astra
     justify-content: center;
 }
 
-#menu-item-602{
+.menu-item-602{
+    
     background-color: #DC9F96;
 }
 
-#menu-item-602:hover{
+.menu-item-602:hover{
     Background-color: #C02E44;
 }
 
-#menu-item-602 a{
+.menu-item-602 a{
     color: #fff;
 }
 #menu-footer-menu{
