@@ -1,0 +1,132 @@
+/**
+Theme Name: Astra Child
+Author: Akim Cheikh
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+#menu-item-81{
+    background-color: #DC9F96;
+}
+/*#menu-item-81 a{
+    color: #fff;
+}
+
+#menu-item-81:hover{
+    Background-color: #C02E44;
+}*/
+
+.ast-container, .ast-container-fluid{
+    padding-right: 0px !important;
+}
+
+.btnplanty{
+    background-color: #E0B9B4 !important;   
+    padding: 10px 70px !important;
+}
+
+.btnplanty:hover{
+    background-color: #C02E44 !important;
+}
+
+.wpforms-submit-container{
+    text-align: center !important;
+}
+
+/***Menu***/
+
+.site-header{
+    position: absolute;
+       
+}
+
+.ast-theme-transparent-header #masthead{
+    left: 0;
+    right: auto;
+}
+.ast-primary-header-bar{
+    display: inline;
+}
+
+.menu-class{
+    background-color: #fff;
+}  
+
+#menu-perssonnalise{
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+}
+
+.menu-class li{
+    list-style-type: none;
+}
+
+.menu-class li a{
+    display: flex;
+    padding: 25px 60px;
+    justify-content: center;
+}
+
+#menu-item-602{
+    background-color: #DC9F96;
+}
+
+#menu-item-602:hover{
+    Background-color: #C02E44;
+}
+
+#menu-item-602 a{
+    color: #fff;
+}
+#menu-footer-menu{
+    margin:0 auto;
+}
+
+/***Formulaire Commande***/
+
+.commande {
+    display: flex;
+    flex-direction: row;
+    /*text-align: center;*/
+    gap: 20px;
+}
+
+.order-number p{
+    display: flex;
+    gap: 20px;
+}
+.numbers {
+    width: 82px !important;
+    height: 56px !important;
+}
+.plus{
+    width: 31px;
+    height: 28px;
+}
+.moins{
+    width: 31px;
+    height: 28px;
+}
+
+#infoliv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.eael-contact-form-7-button-align-left .eael-contact-form-7 .wpcf7-form p:nth-last-of-type(1){
+    margin:0 auto !important;
+}
+#wpcf7-f611-p76-o2 p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

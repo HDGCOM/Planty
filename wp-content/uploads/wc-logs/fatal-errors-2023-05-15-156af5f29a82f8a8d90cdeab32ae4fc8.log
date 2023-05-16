@@ -1,0 +1,588 @@
+2023-05-15T19:10:31+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8661)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:10:35+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8661)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:10:40+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8661)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:10:46+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8661)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:10:54+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8661)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:11:02+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8661)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:12:40+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8661)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:12:43+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8661)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:12:48+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8661)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:12:55+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8661)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:13:01+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8661)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:13:09+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8661)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:25:05+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8675)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:25:10+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8675)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:25:17+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8675)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:25:24+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8675)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:25:30+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8675)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:25:38+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8675)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:27:45+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8675)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:27:49+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8675)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:27:54+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8675)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:28:00+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8675)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:28:07+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8675)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:28:16+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8675)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:33:38+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8679)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:33:42+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8679)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:33:47+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8679)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:33:53+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8679)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:34:00+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8679)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:34:08+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8679)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:44:05+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8679)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:44:09+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8679)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:44:14+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8679)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:44:22+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8679)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:44:29+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8679)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T19:44:38+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8679)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T20:26:24+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8699)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T20:26:28+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8699)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T20:26:33+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8699)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T20:26:40+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8699)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T20:26:47+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8699)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+
+2023-05-15T20:26:55+00:00 CRITICAL Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php:113
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php(113): mysqli_fetch_assoc(false)
+#1 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(1323): Ai1wm_Database_Mysqli->fetch_assoc(false)
+#2 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database.php(868): Ai1wm_Database->get_create_table('wp_mailpoet_sub...')
+#3 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\model\export\class-ai1wm-export-database.php(162): Ai1wm_Database->export('C:\\wamp64\\www\\P...', 0, 49, 0, 8699)
+#4 C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\controller\class-ai1wm-export-controller.php(73): Ai1wm_Export_Database::execute(Array)
+#5 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Ai1wm_Export_Controller::export(Array)
+#6 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_ai1wm_e...')
+#9 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\all-in-one-wp-migration\lib\vendor\servmask\database\class-ai1wm-database-mysqli.php à la ligne 113
+

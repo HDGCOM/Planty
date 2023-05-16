@@ -1,0 +1,305 @@
+2023-05-07T21:30:39+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000]: General error: 145 La table '.\planty\wp_mailpoet_subscribers' est marquée 'crashed' et devrait être réparée in C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php:59
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php(59): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(495): MailPoetVendor\Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(375): MailPoetVendor\Doctrine\DBAL\Connection->executeQuery('SELECT t0.wp_us...', Array, Array)
+#3 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(78): MailPoetVendor\Doctrine\ORM\Persisters\Entity\BasicEntityPersister->load(Array, NULL, NULL, Array, NULL, 1, NULL)
+#4 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Doctrine\Repository.php(69): MailPoetVendor\Doctrine\ORM\EntityRepository->findOneBy(Array, NULL)
+#5 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Statistics\Track\SubscriberHandler.php(54): MailPoet\Doctrine\Repository->findOneBy(Array)
+#6 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Statistics\Track\SubscriberHandler.php(45): MailPoet\Statistics\Track\SubscriberHandler->identifyByEmail('cheikh.akim@gma...')
+#7 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(310): MailPoet\Statistics\Track\SubscriberHandler->identifyByLogin('AdminPlanty')
+#8 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#9 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\wamp64\www\Planty\wp-includes\user.php(121): do_action('wp_login', 'AdminPlanty', Object(WP_User))
+#11 C:\wamp64\www\Planty\wp-login.php(1241): wp_signon(Array, false)
+#12 {main}
+
+Next MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[HY000]: General error: 145 La table '.\planty\wp_mailpoet_subscribers' est marquée 'crashed' et devrait être réparée in C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDO\Exception.php:10
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php(61): MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(495): MailPoetVendor\Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(375): MailPoetVendor\Doctrine\DBAL\Connection->executeQuery('SELECT t0.wp_us...', Array, Array)
+#3 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(78): MailPoetVendor\Doctrine\ORM\Persisters\Entity\BasicEntityPersister->load(Array, NULL, NULL, Array, NULL, 1, NULL)
+#4 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Doctrine\Repository.php(69): MailPoetVendor\Doctrine\ORM\EntityRepository->findOneBy(Array, NULL)
+#5 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Statistics\Track\SubscriberHandler.php(54): MailPoet\Doctrine\Repository->findOneBy(Array)
+#6 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Statistics\Track\SubscriberHandler.php(45): MailPoet\Statistics\Track\SubscriberHandler->identifyByEmail('cheikh.akim@gma...')
+#7 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(310): MailPoet\Statistics\Track\SubscriberHandler->identifyByLogin('AdminPlanty')
+#8 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#9 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\wamp64\www\Planty\wp-includes\user.php(121): do_action('wp_login', 'AdminPlanty', Object(WP_User))
+#11 C:\wamp64\www\Planty\wp-login.php(1241): wp_signon(Array, false)
+#12 {main}
+
+Next MailPoetVendor\Doctrine\DBAL\Exception\DriverException: An exception occurred while executing 'SELECT t0.wp_user_id AS wp_user_id_1, t0.is_woocommerce_user AS is_woocommerce_user_2, t0.first_name AS first_name_3, t0.last_name AS last_name_4, t0.email AS email_5, t0.status AS status_6, t0.subscribed_ip AS subscribed_ip_7, t0.confirmed_ip AS confirmed_ip_8, t0.confirmed_at AS confirmed_at_9, t0.last_subscribed_at AS last_subscribed_at_10, t0.unconfirmed_data AS unconfirmed_data_11, t0.source AS source_12, t0.count_confirmations AS count_confirmations_13, t0.unsubscribe_token AS unsubscribe_token_14, t0.link_token AS link_token_15, t0.engagement_score AS engagement_score_16, t0.engagement_score_updated_at AS engagement_score_updated_at_17, t0.last_engagement_at AS last_engagement_at_18, t0.woocommerce_synced_at AS woocommerce_synced_at_19, t0.email_count AS email_count_20, t0.id AS id_21, t0.created_at AS created_at_22, t0.updated_at AS updated_at_23, t0.deleted_at AS deleted_at_24 FROM wp_mailpoet_subscribers t0 WHERE t0.email = ? LIMIT 1' with params ["cheikh.akim@gmail.com"]:
+
+SQLSTATE[HY000]: General error: 145 La table '.\planty\wp_mailpoet_subscribers' est marquée 'crashed' et devrait être réparée in C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\AbstractMySQLDriver.php:102
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(77): MailPoetVendor\Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception))
+#1 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(65): MailPoetVendor\Doctrine\DBAL\DBALException::wrapException(Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\MySQL\Driver), Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception), 'An exception oc...')
+#2 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(936): MailPoetVendor\Doctrine\DBAL\DBALException::driverExceptionDuringQuery(Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\MySQL\Driver), Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception), 'SELECT t0.wp_us...', Array)
+#3 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(503): MailPoetVendor\Doctrine\DBAL\Connection->handleExceptionDuringQuery(Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception), 'SELECT t0.wp_us...', Array, Array)
+#4 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(375): MailPoetVendor\Doctrine\DBAL\Connection->executeQuery('SELECT t0.wp_us...', Array, Array)
+#5 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(78): MailPoetVendor\Doctrine\ORM\Persisters\Entity\BasicEntityPersister->load(Array, NULL, NULL, Array, NULL, 1, NULL)
+#6 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Doctrine\Repository.php(69): MailPoetVendor\Doctrine\ORM\EntityRepository->findOneBy(Array, NULL)
+#7 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Statistics\Track\SubscriberHandler.php(54): MailPoet\Doctrine\Repository->findOneBy(Array)
+#8 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Statistics\Track\SubscriberHandler.php(45): MailPoet\Statistics\Track\SubscriberHandler->identifyByEmail('cheikh.akim@gma...')
+#9 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(310): MailPoet\Statistics\Track\SubscriberHandler->identifyByLogin('AdminPlanty')
+#10 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#11 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#12 C:\wamp64\www\Planty\wp-includes\user.php(121): do_action('wp_login', 'AdminPlanty', Object(WP_User))
+#13 C:\wamp64\www\Planty\wp-login.php(1241): wp_signon(Array, false)
+#14 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\AbstractMySQLDriver.php à la ligne 102
+
+2023-05-07T21:36:24+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000]: General error: 145 La table '.\planty\wp_mailpoet_subscribers' est marquée 'crashed' et devrait être réparée in C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php:59
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php(59): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(495): MailPoetVendor\Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(375): MailPoetVendor\Doctrine\DBAL\Connection->executeQuery('SELECT t0.wp_us...', Array, Array)
+#3 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(78): MailPoetVendor\Doctrine\ORM\Persisters\Entity\BasicEntityPersister->load(Array, NULL, NULL, Array, NULL, 1, NULL)
+#4 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Doctrine\Repository.php(69): MailPoetVendor\Doctrine\ORM\EntityRepository->findOneBy(Array, NULL)
+#5 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Subscribers\SubscribersRepository.php(329): MailPoet\Doctrine\Repository->findOneBy(Array)
+#6 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\WooCommerce\Subscription.php(165): MailPoet\Subscribers\SubscribersRepository->getCurrentWPUser()
+#7 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\PostEditorBlocks\WooCommerceBlocksIntegration.php(101): MailPoet\WooCommerce\Subscription->isCurrentUserSubscribed()
+#8 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): MailPoet\PostEditorBlocks\WooCommerceBlocksIntegration->registerCheckoutFrontendBlocks(Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#9 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#10 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#11 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\Integrations\IntegrationRegistry.php(50): do_action('woocommerce_blo...', Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#12 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(114): Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry->initialize('checkout_block')
+#13 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(70): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->initialize()
+#14 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypesController.php(65): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->__construct(Object(Automattic\WooCommerce\Blocks\Assets\Api), Object(Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry), Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#15 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Automattic\WooCommerce\Blocks\BlockTypesController->register_blocks('')
+#16 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#17 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#18 C:\wamp64\www\Planty\wp-settings.php(623): do_action('init')
+#19 C:\wamp64\www\Planty\wp-config.php(96): require_once('C:\\wamp64\\www\\P...')
+#20 C:\wamp64\www\Planty\wp-load.php(50): require_once('C:\\wamp64\\www\\P...')
+#21 C:\wamp64\www\Planty\wp-login.php(12): require('C:\\wamp64\\www\\P...')
+#22 {main}
+
+Next MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[HY000]: General error: 145 La table '.\planty\wp_mailpoet_subscribers' est marquée 'crashed' et devrait être réparée in C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDO\Exception.php:10
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php(61): MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(495): MailPoetVendor\Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(375): MailPoetVendor\Doctrine\DBAL\Connection->executeQuery('SELECT t0.wp_us...', Array, Array)
+#3 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(78): MailPoetVendor\Doctrine\ORM\Persisters\Entity\BasicEntityPersister->load(Array, NULL, NULL, Array, NULL, 1, NULL)
+#4 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Doctrine\Repository.php(69): MailPoetVendor\Doctrine\ORM\EntityRepository->findOneBy(Array, NULL)
+#5 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Subscribers\SubscribersRepository.php(329): MailPoet\Doctrine\Repository->findOneBy(Array)
+#6 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\WooCommerce\Subscription.php(165): MailPoet\Subscribers\SubscribersRepository->getCurrentWPUser()
+#7 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\PostEditorBlocks\WooCommerceBlocksIntegration.php(101): MailPoet\WooCommerce\Subscription->isCurrentUserSubscribed()
+#8 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): MailPoet\PostEditorBlocks\WooCommerceBlocksIntegration->registerCheckoutFrontendBlocks(Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#9 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#10 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#11 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\Integrations\IntegrationRegistry.php(50): do_action('woocommerce_blo...', Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#12 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(114): Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry->initialize('checkout_block')
+#13 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(70): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->initialize()
+#14 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypesController.php(65): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->__construct(Object(Automattic\WooCommerce\Blocks\Assets\Api), Object(Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry), Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#15 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Automattic\WooCommerce\Blocks\BlockTypesController->register_blocks('')
+#16 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#17 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#18 C:\wamp64\www\Planty\wp-settings.php(623): do_action('init')
+#19 C:\wamp64\www\Planty\wp-config.php(96): require_once('C:\\wamp64\\www\\P...')
+#20 C:\wamp64\www\Planty\wp-load.php(50): require_once('C:\\wamp64\\www\\P...')
+#21 C:\wamp64\www\Planty\wp-login.php(12): require('C:\\wamp64\\www\\P...')
+#22 {main}
+
+Next MailPoetVendor\Doctrine\DBAL\Exception\DriverException: An exception occurred while executing 'SELECT t0.wp_user_id AS wp_user_id_1, t0.is_woocommerce_user AS is_woocommerce_user_2, t0.first_name AS first_name_3, t0.last_name AS last_name_4, t0.email AS email_5, t0.status AS status_6, t0.subscribed_ip AS subscribed_ip_7, t0.confirmed_ip AS confirmed_ip_8, t0.confirmed_at AS confirmed_at_9, t0.last_subscribed_at AS last_subscribed_at_10, t0.unconfirmed_data AS unconfirmed_data_11, t0.source AS source_12, t0.count_confirmations AS count_confirmations_13, t0.unsubscribe_token AS unsubscribe_token_14, t0.link_token AS link_token_15, t0.engagement_score AS engagement_score_16, t0.engagement_score_updated_at AS engagement_score_updated_at_17, t0.last_engagement_at AS last_engagement_at_18, t0.woocommerce_synced_at AS woocommerce_synced_at_19, t0.email_count AS email_count_20, t0.id AS id_21, t0.created_at AS created_at_22, t0.updated_at AS updated_at_23, t0.deleted_at AS deleted_at_24 FROM wp_mailpoet_subscribers t0 WHERE t0.wp_user_id = ? LIMIT 1' with params [1]:
+
+SQLSTATE[HY000]: General error: 145 La table '.\planty\wp_mailpoet_subscribers' est marquée 'crashed' et devrait être réparée in C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\AbstractMySQLDriver.php:102
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(77): MailPoetVendor\Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception))
+#1 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(65): MailPoetVendor\Doctrine\DBAL\DBALException::wrapException(Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\MySQL\Driver), Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception), 'An exception oc...')
+#2 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(936): MailPoetVendor\Doctrine\DBAL\DBALException::driverExceptionDuringQuery(Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\MySQL\Driver), Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception), 'SELECT t0.wp_us...', Array)
+#3 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(503): MailPoetVendor\Doctrine\DBAL\Connection->handleExceptionDuringQuery(Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception), 'SELECT t0.wp_us...', Array, Array)
+#4 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(375): MailPoetVendor\Doctrine\DBAL\Connection->executeQuery('SELECT t0.wp_us...', Array, Array)
+#5 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(78): MailPoetVendor\Doctrine\ORM\Persisters\Entity\BasicEntityPersister->load(Array, NULL, NULL, Array, NULL, 1, NULL)
+#6 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Doctrine\Repository.php(69): MailPoetVendor\Doctrine\ORM\EntityRepository->findOneBy(Array, NULL)
+#7 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Subscribers\SubscribersRepository.php(329): MailPoet\Doctrine\Repository->findOneBy(Array)
+#8 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\WooCommerce\Subscription.php(165): MailPoet\Subscribers\SubscribersRepository->getCurrentWPUser()
+#9 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\PostEditorBlocks\WooCommerceBlocksIntegration.php(101): MailPoet\WooCommerce\Subscription->isCurrentUserSubscribed()
+#10 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): MailPoet\PostEditorBlocks\WooCommerceBlocksIntegration->registerCheckoutFrontendBlocks(Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#11 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#12 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#13 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\Integrations\IntegrationRegistry.php(50): do_action('woocommerce_blo...', Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#14 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(114): Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry->initialize('checkout_block')
+#15 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(70): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->initialize()
+#16 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypesController.php(65): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->__construct(Object(Automattic\WooCommerce\Blocks\Assets\Api), Object(Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry), Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#17 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Automattic\WooCommerce\Blocks\BlockTypesController->register_blocks('')
+#18 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#19 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#20 C:\wamp64\www\Planty\wp-settings.php(623): do_action('init')
+#21 C:\wamp64\www\Planty\wp-config.php(96): require_once('C:\\wamp64\\www\\P...')
+#22 C:\wamp64\www\Planty\wp-load.php(50): require_once('C:\\wamp64\\www\\P...')
+#23 C:\wamp64\www\Planty\wp-login.php(12): require('C:\\wamp64\\www\\P...')
+#24 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\AbstractMySQLDriver.php à la ligne 102
+
+2023-05-07T22:05:56+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000]: General error: 145 La table '.\planty\wp_mailpoet_subscribers' est marquée 'crashed' et devrait être réparée in C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php:59
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php(59): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(495): MailPoetVendor\Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(375): MailPoetVendor\Doctrine\DBAL\Connection->executeQuery('SELECT t0.wp_us...', Array, Array)
+#3 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(78): MailPoetVendor\Doctrine\ORM\Persisters\Entity\BasicEntityPersister->load(Array, NULL, NULL, Array, NULL, 1, NULL)
+#4 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Doctrine\Repository.php(69): MailPoetVendor\Doctrine\ORM\EntityRepository->findOneBy(Array, NULL)
+#5 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Subscribers\SubscribersRepository.php(329): MailPoet\Doctrine\Repository->findOneBy(Array)
+#6 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\WooCommerce\Subscription.php(165): MailPoet\Subscribers\SubscribersRepository->getCurrentWPUser()
+#7 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\PostEditorBlocks\WooCommerceBlocksIntegration.php(101): MailPoet\WooCommerce\Subscription->isCurrentUserSubscribed()
+#8 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): MailPoet\PostEditorBlocks\WooCommerceBlocksIntegration->registerCheckoutFrontendBlocks(Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#9 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#10 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#11 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\Integrations\IntegrationRegistry.php(50): do_action('woocommerce_blo...', Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#12 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(114): Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry->initialize('checkout_block')
+#13 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(70): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->initialize()
+#14 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypesController.php(65): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->__construct(Object(Automattic\WooCommerce\Blocks\Assets\Api), Object(Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry), Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#15 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Automattic\WooCommerce\Blocks\BlockTypesController->register_blocks('')
+#16 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#17 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#18 C:\wamp64\www\Planty\wp-settings.php(623): do_action('init')
+#19 C:\wamp64\www\Planty\wp-config.php(96): require_once('C:\\wamp64\\www\\P...')
+#20 C:\wamp64\www\Planty\wp-load.php(50): require_once('C:\\wamp64\\www\\P...')
+#21 C:\wamp64\www\Planty\wp-admin\admin.php(34): require_once('C:\\wamp64\\www\\P...')
+#22 C:\wamp64\www\Planty\wp-admin\index.php(10): require_once('C:\\wamp64\\www\\P...')
+#23 {main}
+
+Next MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[HY000]: General error: 145 La table '.\planty\wp_mailpoet_subscribers' est marquée 'crashed' et devrait être réparée in C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDO\Exception.php:10
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php(61): MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(495): MailPoetVendor\Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(375): MailPoetVendor\Doctrine\DBAL\Connection->executeQuery('SELECT t0.wp_us...', Array, Array)
+#3 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(78): MailPoetVendor\Doctrine\ORM\Persisters\Entity\BasicEntityPersister->load(Array, NULL, NULL, Array, NULL, 1, NULL)
+#4 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Doctrine\Repository.php(69): MailPoetVendor\Doctrine\ORM\EntityRepository->findOneBy(Array, NULL)
+#5 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Subscribers\SubscribersRepository.php(329): MailPoet\Doctrine\Repository->findOneBy(Array)
+#6 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\WooCommerce\Subscription.php(165): MailPoet\Subscribers\SubscribersRepository->getCurrentWPUser()
+#7 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\PostEditorBlocks\WooCommerceBlocksIntegration.php(101): MailPoet\WooCommerce\Subscription->isCurrentUserSubscribed()
+#8 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): MailPoet\PostEditorBlocks\WooCommerceBlocksIntegration->registerCheckoutFrontendBlocks(Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#9 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#10 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#11 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\Integrations\IntegrationRegistry.php(50): do_action('woocommerce_blo...', Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#12 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(114): Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry->initialize('checkout_block')
+#13 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(70): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->initialize()
+#14 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypesController.php(65): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->__construct(Object(Automattic\WooCommerce\Blocks\Assets\Api), Object(Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry), Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#15 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Automattic\WooCommerce\Blocks\BlockTypesController->register_blocks('')
+#16 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#17 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#18 C:\wamp64\www\Planty\wp-settings.php(623): do_action('init')
+#19 C:\wamp64\www\Planty\wp-config.php(96): require_once('C:\\wamp64\\www\\P...')
+#20 C:\wamp64\www\Planty\wp-load.php(50): require_once('C:\\wamp64\\www\\P...')
+#21 C:\wamp64\www\Planty\wp-admin\admin.php(34): require_once('C:\\wamp64\\www\\P...')
+#22 C:\wamp64\www\Planty\wp-admin\index.php(10): require_once('C:\\wamp64\\www\\P...')
+#23 {main}
+
+Next MailPoetVendor\Doctrine\DBAL\Exception\DriverException: An exception occurred while executing 'SELECT t0.wp_user_id AS wp_user_id_1, t0.is_woocommerce_user AS is_woocommerce_user_2, t0.first_name AS first_name_3, t0.last_name AS last_name_4, t0.email AS email_5, t0.status AS status_6, t0.subscribed_ip AS subscribed_ip_7, t0.confirmed_ip AS confirmed_ip_8, t0.confirmed_at AS confirmed_at_9, t0.last_subscribed_at AS last_subscribed_at_10, t0.unconfirmed_data AS unconfirmed_data_11, t0.source AS source_12, t0.count_confirmations AS count_confirmations_13, t0.unsubscribe_token AS unsubscribe_token_14, t0.link_token AS link_token_15, t0.engagement_score AS engagement_score_16, t0.engagement_score_updated_at AS engagement_score_updated_at_17, t0.last_engagement_at AS last_engagement_at_18, t0.woocommerce_synced_at AS woocommerce_synced_at_19, t0.email_count AS email_count_20, t0.id AS id_21, t0.created_at AS created_at_22, t0.updated_at AS updated_at_23, t0.deleted_at AS deleted_at_24 FROM wp_mailpoet_subscribers t0 WHERE t0.wp_user_id = ? LIMIT 1' with params [1]:
+
+SQLSTATE[HY000]: General error: 145 La table '.\planty\wp_mailpoet_subscribers' est marquée 'crashed' et devrait être réparée in C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\AbstractMySQLDriver.php:102
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(77): MailPoetVendor\Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception))
+#1 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(65): MailPoetVendor\Doctrine\DBAL\DBALException::wrapException(Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\MySQL\Driver), Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception), 'An exception oc...')
+#2 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(936): MailPoetVendor\Doctrine\DBAL\DBALException::driverExceptionDuringQuery(Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\MySQL\Driver), Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception), 'SELECT t0.wp_us...', Array)
+#3 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(503): MailPoetVendor\Doctrine\DBAL\Connection->handleExceptionDuringQuery(Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception), 'SELECT t0.wp_us...', Array, Array)
+#4 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(375): MailPoetVendor\Doctrine\DBAL\Connection->executeQuery('SELECT t0.wp_us...', Array, Array)
+#5 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(78): MailPoetVendor\Doctrine\ORM\Persisters\Entity\BasicEntityPersister->load(Array, NULL, NULL, Array, NULL, 1, NULL)
+#6 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Doctrine\Repository.php(69): MailPoetVendor\Doctrine\ORM\EntityRepository->findOneBy(Array, NULL)
+#7 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Subscribers\SubscribersRepository.php(329): MailPoet\Doctrine\Repository->findOneBy(Array)
+#8 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\WooCommerce\Subscription.php(165): MailPoet\Subscribers\SubscribersRepository->getCurrentWPUser()
+#9 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\PostEditorBlocks\WooCommerceBlocksIntegration.php(101): MailPoet\WooCommerce\Subscription->isCurrentUserSubscribed()
+#10 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): MailPoet\PostEditorBlocks\WooCommerceBlocksIntegration->registerCheckoutFrontendBlocks(Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#11 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#12 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#13 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\Integrations\IntegrationRegistry.php(50): do_action('woocommerce_blo...', Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#14 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(114): Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry->initialize('checkout_block')
+#15 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(70): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->initialize()
+#16 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypesController.php(65): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->__construct(Object(Automattic\WooCommerce\Blocks\Assets\Api), Object(Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry), Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#17 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Automattic\WooCommerce\Blocks\BlockTypesController->register_blocks('')
+#18 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#19 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#20 C:\wamp64\www\Planty\wp-settings.php(623): do_action('init')
+#21 C:\wamp64\www\Planty\wp-config.php(96): require_once('C:\\wamp64\\www\\P...')
+#22 C:\wamp64\www\Planty\wp-load.php(50): require_once('C:\\wamp64\\www\\P...')
+#23 C:\wamp64\www\Planty\wp-admin\admin.php(34): require_once('C:\\wamp64\\www\\P...')
+#24 C:\wamp64\www\Planty\wp-admin\index.php(10): require_once('C:\\wamp64\\www\\P...')
+#25 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\AbstractMySQLDriver.php à la ligne 102
+
+2023-05-07T22:06:00+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000]: General error: 145 La table '.\planty\wp_mailpoet_subscribers' est marquée 'crashed' et devrait être réparée in C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php:59
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php(59): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(495): MailPoetVendor\Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(375): MailPoetVendor\Doctrine\DBAL\Connection->executeQuery('SELECT t0.wp_us...', Array, Array)
+#3 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(78): MailPoetVendor\Doctrine\ORM\Persisters\Entity\BasicEntityPersister->load(Array, NULL, NULL, Array, NULL, 1, NULL)
+#4 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Doctrine\Repository.php(69): MailPoetVendor\Doctrine\ORM\EntityRepository->findOneBy(Array, NULL)
+#5 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Subscribers\SubscribersRepository.php(329): MailPoet\Doctrine\Repository->findOneBy(Array)
+#6 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\WooCommerce\Subscription.php(165): MailPoet\Subscribers\SubscribersRepository->getCurrentWPUser()
+#7 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\PostEditorBlocks\WooCommerceBlocksIntegration.php(101): MailPoet\WooCommerce\Subscription->isCurrentUserSubscribed()
+#8 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): MailPoet\PostEditorBlocks\WooCommerceBlocksIntegration->registerCheckoutFrontendBlocks(Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#9 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#10 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#11 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\Integrations\IntegrationRegistry.php(50): do_action('woocommerce_blo...', Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#12 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(114): Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry->initialize('checkout_block')
+#13 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(70): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->initialize()
+#14 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypesController.php(65): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->__construct(Object(Automattic\WooCommerce\Blocks\Assets\Api), Object(Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry), Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#15 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Automattic\WooCommerce\Blocks\BlockTypesController->register_blocks('')
+#16 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#17 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#18 C:\wamp64\www\Planty\wp-settings.php(623): do_action('init')
+#19 C:\wamp64\www\Planty\wp-config.php(96): require_once('C:\\wamp64\\www\\P...')
+#20 C:\wamp64\www\Planty\wp-load.php(50): require_once('C:\\wamp64\\www\\P...')
+#21 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(22): require_once('C:\\wamp64\\www\\P...')
+#22 {main}
+
+Next MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[HY000]: General error: 145 La table '.\planty\wp_mailpoet_subscribers' est marquée 'crashed' et devrait être réparée in C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDO\Exception.php:10
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php(61): MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(495): MailPoetVendor\Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(375): MailPoetVendor\Doctrine\DBAL\Connection->executeQuery('SELECT t0.wp_us...', Array, Array)
+#3 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(78): MailPoetVendor\Doctrine\ORM\Persisters\Entity\BasicEntityPersister->load(Array, NULL, NULL, Array, NULL, 1, NULL)
+#4 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Doctrine\Repository.php(69): MailPoetVendor\Doctrine\ORM\EntityRepository->findOneBy(Array, NULL)
+#5 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Subscribers\SubscribersRepository.php(329): MailPoet\Doctrine\Repository->findOneBy(Array)
+#6 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\WooCommerce\Subscription.php(165): MailPoet\Subscribers\SubscribersRepository->getCurrentWPUser()
+#7 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\PostEditorBlocks\WooCommerceBlocksIntegration.php(101): MailPoet\WooCommerce\Subscription->isCurrentUserSubscribed()
+#8 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): MailPoet\PostEditorBlocks\WooCommerceBlocksIntegration->registerCheckoutFrontendBlocks(Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#9 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#10 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#11 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\Integrations\IntegrationRegistry.php(50): do_action('woocommerce_blo...', Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#12 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(114): Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry->initialize('checkout_block')
+#13 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(70): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->initialize()
+#14 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypesController.php(65): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->__construct(Object(Automattic\WooCommerce\Blocks\Assets\Api), Object(Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry), Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#15 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Automattic\WooCommerce\Blocks\BlockTypesController->register_blocks('')
+#16 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#17 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#18 C:\wamp64\www\Planty\wp-settings.php(623): do_action('init')
+#19 C:\wamp64\www\Planty\wp-config.php(96): require_once('C:\\wamp64\\www\\P...')
+#20 C:\wamp64\www\Planty\wp-load.php(50): require_once('C:\\wamp64\\www\\P...')
+#21 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(22): require_once('C:\\wamp64\\www\\P...')
+#22 {main}
+
+Next MailPoetVendor\Doctrine\DBAL\Exception\DriverException: An exception occurred while executing 'SELECT t0.wp_user_id AS wp_user_id_1, t0.is_woocommerce_user AS is_woocommerce_user_2, t0.first_name AS first_name_3, t0.last_name AS last_name_4, t0.email AS email_5, t0.status AS status_6, t0.subscribed_ip AS subscribed_ip_7, t0.confirmed_ip AS confirmed_ip_8, t0.confirmed_at AS confirmed_at_9, t0.last_subscribed_at AS last_subscribed_at_10, t0.unconfirmed_data AS unconfirmed_data_11, t0.source AS source_12, t0.count_confirmations AS count_confirmations_13, t0.unsubscribe_token AS unsubscribe_token_14, t0.link_token AS link_token_15, t0.engagement_score AS engagement_score_16, t0.engagement_score_updated_at AS engagement_score_updated_at_17, t0.last_engagement_at AS last_engagement_at_18, t0.woocommerce_synced_at AS woocommerce_synced_at_19, t0.email_count AS email_count_20, t0.id AS id_21, t0.created_at AS created_at_22, t0.updated_at AS updated_at_23, t0.deleted_at AS deleted_at_24 FROM wp_mailpoet_subscribers t0 WHERE t0.wp_user_id = ? LIMIT 1' with params [1]:
+
+SQLSTATE[HY000]: General error: 145 La table '.\planty\wp_mailpoet_subscribers' est marquée 'crashed' et devrait être réparée in C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\AbstractMySQLDriver.php:102
+Stack trace:
+#0 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(77): MailPoetVendor\Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception))
+#1 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\DBALException.php(65): MailPoetVendor\Doctrine\DBAL\DBALException::wrapException(Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\MySQL\Driver), Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception), 'An exception oc...')
+#2 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(936): MailPoetVendor\Doctrine\DBAL\DBALException::driverExceptionDuringQuery(Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\MySQL\Driver), Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception), 'SELECT t0.wp_us...', Array)
+#3 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(503): MailPoetVendor\Doctrine\DBAL\Connection->handleExceptionDuringQuery(Object(MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception), 'SELECT t0.wp_us...', Array, Array)
+#4 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(375): MailPoetVendor\Doctrine\DBAL\Connection->executeQuery('SELECT t0.wp_us...', Array, Array)
+#5 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\EntityRepository.php(78): MailPoetVendor\Doctrine\ORM\Persisters\Entity\BasicEntityPersister->load(Array, NULL, NULL, Array, NULL, 1, NULL)
+#6 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Doctrine\Repository.php(69): MailPoetVendor\Doctrine\ORM\EntityRepository->findOneBy(Array, NULL)
+#7 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\Subscribers\SubscribersRepository.php(329): MailPoet\Doctrine\Repository->findOneBy(Array)
+#8 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\WooCommerce\Subscription.php(165): MailPoet\Subscribers\SubscribersRepository->getCurrentWPUser()
+#9 C:\wamp64\www\Planty\wp-content\plugins\mailpoet\lib\PostEditorBlocks\WooCommerceBlocksIntegration.php(101): MailPoet\WooCommerce\Subscription->isCurrentUserSubscribed()
+#10 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): MailPoet\PostEditorBlocks\WooCommerceBlocksIntegration->registerCheckoutFrontendBlocks(Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#11 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#12 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#13 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\Integrations\IntegrationRegistry.php(50): do_action('woocommerce_blo...', Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#14 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(114): Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry->initialize('checkout_block')
+#15 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php(70): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->initialize()
+#16 C:\wamp64\www\Planty\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypesController.php(65): Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock->__construct(Object(Automattic\WooCommerce\Blocks\Assets\Api), Object(Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry), Object(Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry))
+#17 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(308): Automattic\WooCommerce\Blocks\BlockTypesController->register_blocks('')
+#18 C:\wamp64\www\Planty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#19 C:\wamp64\www\Planty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#20 C:\wamp64\www\Planty\wp-settings.php(623): do_action('init')
+#21 C:\wamp64\www\Planty\wp-config.php(96): require_once('C:\\wamp64\\www\\P...')
+#22 C:\wamp64\www\Planty\wp-load.php(50): require_once('C:\\wamp64\\www\\P...')
+#23 C:\wamp64\www\Planty\wp-admin\admin-ajax.php(22): require_once('C:\\wamp64\\www\\P...')
+#24 {main}
+  thrown dans C:\wamp64\www\Planty\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\AbstractMySQLDriver.php à la ligne 102
+
