@@ -57,6 +57,10 @@ Template: astra
     background-color: #fff;
 }  
 
+.footer-class{
+    background-color: #fff;
+}  
+
 #menu-perssonnalise{
     height: 80px;
     margin: 0 auto;
@@ -130,4 +134,12 @@ Template: astra
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/***Menu mobile***/
+
+@media screen and (max-width: 544px){
+    .menu-class{
+        display: none;
+    }
 }

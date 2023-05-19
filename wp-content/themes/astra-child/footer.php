@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	wp_nav_menu( array( 
 		'theme_location' => 'ftrmenu', 
-		'container_class' => 'menu-class'
+		'container_class' => 'footer-class'
 		 ) 
 	); 
 		
