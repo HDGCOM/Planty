@@ -59,7 +59,14 @@ Template: astra
 
 .footer-class{
     background-color: #fff;
-}  
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+#menu-item-358{
+    list-style-type: none;
+}
 
 #menu-perssonnalise{
     height: 80px;
@@ -141,5 +148,18 @@ Template: astra
 @media screen and (max-width: 544px){
     .menu-class{
         display: none;
+    }
+
+    #ast-scroll-top{
+        display: none !important;
+    }
+
+    .footer-class{
+      height: 50px;
+    }
+
+    .ast-theme-transparent-header #masthead{
+        right: 0;
+        background-color: #fff;
     }
 }
