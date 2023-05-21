@@ -108,15 +108,25 @@ Template: astra
     display: flex;
     flex-direction: row;
     /*text-align: center;*/
-    gap: 20px;
+    /*gap: 20px;*/
+}
+
+.order-number{
+    display: flex;
 }
 
 .order-number p{
     display: flex;
-    gap: 20px;
+    
+}
+
+.plusmoins p{
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
 }
 .numbers {
-    width: 82px !important;
+    width: 51px !important;
     height: 56px !important;
 }
 .plus{
@@ -126,6 +136,10 @@ Template: astra
 .moins{
     width: 31px;
     height: 28px;
+}
+
+.ok{
+    height: 56px;
 }
 
 #infoliv{
