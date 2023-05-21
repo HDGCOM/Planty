@@ -104,12 +104,12 @@ Template: astra
 
 /***Formulaire Commande***/
 
-.commande {
+/*.commande {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 15px;
-}
+}*/
 .order{
     display: flex;
     justify-content: space-between;
@@ -185,6 +185,10 @@ input::-webkit-outer-spin-button {
 
 .eael-contact-form-7-button-align-left .eael-contact-form-7 .wpcf7-form p:nth-last-of-type(1){
     margin:0 auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #wpcf7-f611-p76-o2 p{
     display: flex;
