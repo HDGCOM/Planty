@@ -107,8 +107,13 @@ Template: astra
 .commande {
     display: flex;
     flex-direction: row;
-    /*text-align: center;*/
-    /*gap: 20px;*/
+    justify-content: space-between;
+    gap: 15px;
+}
+.order{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
 }
 
 .order-number{
@@ -127,25 +132,55 @@ Template: astra
 }
 .numbers {
     width: 51px !important;
-    height: 56px !important;
+    height: 57px !important;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px 0 0 5px !important;
+    font-family: sans-serif;
+    text-align: center;
 }
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
+
 .plus{
-    width: 31px;
-    height: 28px;
+    padding: 4px 14.5px;
+    border-radius: 0px 5px 0px 0px;
+    border-bottom: 0.5px solid #fff;
+    background-color: #DC9F96;
+    font-weight: 500;
+    font-size: 20px;
 }
 .moins{
-    width: 31px;
-    height: 28px;
+    padding: 4px 14.5px;
+    border-radius: 0 0 5px 0;
+    background-color: #DC9F96;
+    /*font-weight: 400;*/
+    font-size: 20px;
 }
 
 .ok{
-    height: 56px;
+    height: 57px;
+    width: 95px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #E0B9B4;
+}
+.ok:hover, .plus:hover, .moins:hover{
+    background-color: #C02E44;
 }
 
 #infoliv{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 
 .eael-contact-form-7-button-align-left .eael-contact-form-7 .wpcf7-form p:nth-last-of-type(1){
