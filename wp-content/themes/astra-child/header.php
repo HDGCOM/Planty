@@ -54,12 +54,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	astra_header_before();
 
 	astra_header();
-
+	
 	wp_nav_menu( array( 
 		'theme_location' => 'header', 
 		'container_class' => 'menu-class'
 		 ) 
-	); 
+	);
 
 	/*astra_header_after();*/
 

@@ -31,3 +31,24 @@ function wpb_custom_new_menu() {
   register_nav_menu('ftrmenu',__( 'Footer Menu' ));
   }
   add_action( 'init', 'wpb_custom_new_menu' );
+
+//Ajouter un lien
+
+function lien_admin_menu( $items, $args ) {
+  
+  // Si l'utilisateur est connecté et s'il est administrateur et spécifier le menu d'affichage
+ 
+  if ( is_user_logged_in() && current_user_can( 'administrator' ) && $args->theme_location === 'header' ) {
+      
+      // link Admin
+      $admin_link = admin_url();
+      $link_text = 'Admin';
+      $link = '<li><a href="' . $admin_link . '">' . $link_text . '</a></li>';
+
+      // Insérer le lien après le premier élément du menu
+      $items = preg_replace( '/(<li[^>]+>)(.*)(<\/li>)/', '$1$2</li>' . $link . '$3', $items, 1 );
+  }
+
+  return $items;
+}
+add_filter( 'wp_nav_menu_items', 'lien_admin_menu', 10, 2 );

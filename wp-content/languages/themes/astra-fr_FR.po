@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Astra package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-05-21 07:40:25+0000\n"
+"PO-Revision-Date: 2023-05-22 08:07:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1667,7 +1667,7 @@ msgstr "Publications similaires"
 
 #: inc/modules/related-posts/customizer/class-astra-related-posts-configs.php:59
 msgid "Enable Related Posts"
-msgstr "Acter les publications similaires"
+msgstr "Activer les publications similaires"
 
 #: searchform.php:26
 msgid "Search for:"
@@ -2297,7 +2297,7 @@ msgstr "Couleur - image d’arrière-plan"
 #: inc/customizer/configurations/builder/footer/class-astra-customizer-footer-builder-configs.php:187
 #: inc/customizer/configurations/builder/footer/class-astra-customizer-footer-builder-configs.php:246
 msgid "Footer Builder"
-msgstr "Constructeur de pied de page"
+msgstr "Pied de page"
 
 #: inc/builder/class-astra-builder-loader.php:93
 #: inc/customizer/configurations/builder/header/class-astra-customizer-header-builder-configs.php:177
@@ -2305,7 +2305,7 @@ msgstr "Constructeur de pied de page"
 #: inc/customizer/configurations/builder/header/class-astra-customizer-header-builder-configs.php:327
 #: inc/customizer/configurations/builder/header/class-astra-customizer-primary-header-configs.php:49
 msgid "Header Builder"
-msgstr "Constructeur d’en-tête"
+msgstr "En-tête"
 
 #: inc/builder/type/header/account/class-astra-header-account-component.php:111
 msgid "Account Woo Navigation"
@@ -2566,7 +2566,7 @@ msgstr "Bordure"
 #: inc/customizer/configurations/layout/class-astra-site-identity-configs.php:336
 #: inc/customizer/extend-custom-controls/build/index.js:1
 msgid "Color"
-msgstr "Couleur"
+msgstr "Couleurs"
 
 #: inc/customizer/configurations/builder/class-astra-builder-base-configuration.php:349
 #: inc/customizer/configurations/colors-background/class-astra-advanced-footer-colors-configs.php:113
