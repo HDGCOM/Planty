@@ -34,11 +34,11 @@ function wpb_custom_new_menu() {
 
 //Ajouter un lien
 
-function lien_admin_menu( $items, $args ) {
+function lien_admin_menu( $items, $args) {
   
   // Si l'utilisateur est connecté et s'il est administrateur et spécifier le menu d'affichage
  
-  if ( is_user_logged_in() && current_user_can( 'administrator' ) && $args->theme_location === 'header' ) {
+  if ( is_user_logged_in() && current_user_can( 'administrator' ) && $args->theme_location === 'header') {
       
       // link Admin
       $admin_link = admin_url();
@@ -46,7 +46,17 @@ function lien_admin_menu( $items, $args ) {
       $link = '<li><a href="' . $admin_link . '">' . $link_text . '</a></li>';
 
       // Insérer le lien après le premier élément du menu
+     $items = preg_replace( '/(<li[^>]+>)(.*)(<\/li>)/', '$1$2</li>' . $link . '$3', $items, 1 );
+
+     // Insérer le lien après le premier élément du menu de l'en-tête (header)
+     /*if ($args1->theme_location === 'header') {
       $items = preg_replace( '/(<li[^>]+>)(.*)(<\/li>)/', '$1$2</li>' . $link . '$3', $items, 1 );
+    }
+
+    // Insérer le lien après le premier élément du menu du pied de page (footer)
+    if ($args2->theme_location === 'astra-hamburger-menu') {
+        $items = preg_replace( '/(<li[^>]+>)(.*)(<\/li>)/', '$1$2</li>' . $link . '$3', $items, 1 );
+    }*/
   }
 
   return $items;
