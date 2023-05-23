@@ -38,6 +38,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Premium_Grid extends Widget_Base {
 
 	/**
+	 * Template Instance
+	 *
+	 * @var template_instance
+	 */
+	protected $template_instance;
+
+	/**
 	 * Check for Self Hosted Videos
 	 *
 	 * @var is_self_hosted
@@ -61,8 +68,7 @@ class Premium_Grid extends Widget_Base {
 	 * @access public
 	 */
 	public function getTemplateInstance() {
-		$this->template_instance = Premium_Template_Tags::getInstance();
-		return $this->template_instance;
+		return $this->template_instance = Premium_Template_Tags::getInstance();
 	}
 
 	/**

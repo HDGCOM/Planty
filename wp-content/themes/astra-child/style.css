@@ -199,6 +199,10 @@ input::-webkit-outer-spin-button {
 /***Menu mobile***/
 
 @media screen and (max-width: 544px){
+    .site-header{
+        width: 100%;
+    }
+
     .menu-class{
         display: none;
     }
