@@ -86,16 +86,16 @@ Template: astra
     justify-content: center;
 }
 
-.menu-item-602{
+.menu-item-778, .menu-item-602{
     
     background-color: #DC9F96;
 }
 
-.menu-item-602:hover{
+.menu-item-778:hover, .menu-item-602:hover{
     Background-color: #C02E44;
 }
 
-.menu-item-602 a{
+.menu-item-778 a, .menu-item-602 a{
     color: #fff;
 }
 #menu-footer-menu{
@@ -217,6 +217,27 @@ input::-webkit-outer-spin-button {
 
     .ast-theme-transparent-header #masthead{
         right: 0;
-        background-color: #fff;
+        background-color: #fff;    
     }
+    .order{    
+        justify-content:space-evenly;      
+    }
+
+    #infoliv {
+        flex-direction: column;
+    }
+
+    .informations , .livraison {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        
+    }
+
+    .livraison {
+      margin-top: 70px;        
+    }
+
+
 }
