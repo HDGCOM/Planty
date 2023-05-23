@@ -47,18 +47,35 @@ function lien_admin_menu( $items, $args) {
 
       // Insérer le lien après le premier élément du menu
      $items = preg_replace( '/(<li[^>]+>)(.*)(<\/li>)/', '$1$2</li>' . $link . '$3', $items, 1 );
-
-     // Insérer le lien après le premier élément du menu de l'en-tête (header)
-     /*if ($args1->theme_location === 'header') {
-      $items = preg_replace( '/(<li[^>]+>)(.*)(<\/li>)/', '$1$2</li>' . $link . '$3', $items, 1 );
-    }
-
-    // Insérer le lien après le premier élément du menu du pied de page (footer)
-    if ($args2->theme_location === 'astra-hamburger-menu') {
-        $items = preg_replace( '/(<li[^>]+>)(.*)(<\/li>)/', '$1$2</li>' . $link . '$3', $items, 1 );
-    }*/
   }
 
   return $items;
 }
+
+
+//test
+
+/*function lien_admin_menu( $items, $args1, $args2 ) {
+  
+  if ( is_user_logged_in() && current_user_can( 'administrator' ) && $args1->theme_location === 'header' && $args2->theme_location === 'mobile_menu') {
+      
+      // link Admin
+      $admin_link = admin_url();
+      $link_text = 'Admin';
+      $link = '<li><a href="' . $admin_link . '">' . $link_text . '</a></li>';
+
+     if ($args1->theme_location === 'header') {
+      $items = preg_replace( '/(<li[^>]+>)(.*)(<\/li>)/', '$1$2</li>' . $link . '$3', $items, 1 );
+    }
+
+    if ($args2->theme_location === 'mobile_menu') {
+        $items = preg_replace( '/(<li[^>]+>)(.*)(<\/li>)/', '$1$2</li>' . $link . '$3', $items, 1 );
+    }
+  }
+
+  return $items;
+}*/
+
+//fin test
+
 add_filter( 'wp_nav_menu_items', 'lien_admin_menu', 10, 2 );
