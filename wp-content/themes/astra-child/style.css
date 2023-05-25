@@ -196,7 +196,7 @@ input::-webkit-outer-spin-button {
     align-items: center;
 }
 
-/***Menu mobile***/
+/***mobile***/
 
 @media screen and (max-width: 544px){
     .site-header{
@@ -241,3 +241,26 @@ input::-webkit-outer-spin-button {
 
 
 }
+
+/***Tab***/
+
+
+@media screen and (max-width: 921px){
+    .site-header{
+        width: 100%;
+    }
+
+    .menu-class{
+        display: none;
+    }
+
+    #ast-scroll-top{
+        display: none !important;
+    }
+
+    .ast-theme-transparent-header #masthead{
+        right: 0;
+        background-color: #fff;    
+    }
+}
+

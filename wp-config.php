@@ -1,4 +1,5 @@
 <?php
+define('WP_CACHE', true); // WP-Optimize Cache
 /**
  * La configuration de base de votre installation WordPress.
  *
@@ -18,28 +19,21 @@
  *
  * @package WordPress
  */
-
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
 define( 'DB_NAME', 'Planty' );
-
 /** Utilisateur de la base de données MySQL. */
 define( 'DB_USER', 'root' );
-
 /** Mot de passe de la base de données MySQL. */
 define( 'DB_PASSWORD', '' );
-
 /** Adresse de l’hébergement MySQL. */
 define( 'DB_HOST', 'localhost' );
-
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
-
 /** Type de collation de la base de données.
   * N’y touchez que si vous savez ce que vous faites.
   */
 define('DB_COLLATE', '');
-
 /**#@+
  * Clés uniques d’authentification et salage.
  *
@@ -60,7 +54,6 @@ define( 'SECURE_AUTH_SALT', '%qzqiZn=E:p%){Y#pJq=OjdM@&%+9I5WT)]tW%dn-(M02+Gr=0.
 define( 'LOGGED_IN_SALT',   'd642Ijj|d5R,+T<8)BAQ#d5}/W?`pPVm^_XZC]`:jjl2o}D/M6+A:&T~$+=;41?(' );
 define( 'NONCE_SALT',       'dj$Y^)VyI^,Elf{HiIqpn { 5(Z8rK}Idp}bI)FJIH#L*@KaAv}]eOq.f6</mKNv' );
 /**#@-*/
-
 /**
  * Préfixe de base de données pour les tables de WordPress.
  *
@@ -69,7 +62,6 @@ define( 'NONCE_SALT',       'dj$Y^)VyI^,Elf{HiIqpn { 5(Z8rK}Idp}bI)FJIH#L*@KaAv}
  * N’utilisez que des chiffres, des lettres non-accentuées, et des caractères soulignés !
  */
 $table_prefix = 'wp_';
-
 /**
  * Pour les développeurs et développeuses : le mode déboguage de WordPress.
  *
@@ -85,12 +77,9 @@ $table_prefix = 'wp_';
  * @link https://fr.wordpress.org/support/article/debugging-in-wordpress/
  */
 define('WP_DEBUG', false);
-
 /* C’est tout, ne touchez pas à ce qui suit ! Bonne publication. */
-
 /** Chemin absolu vers le dossier de WordPress. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
-
 /** Réglage des variables de WordPress et de ses fichiers inclus. */
 require_once(ABSPATH . 'wp-settings.php');
