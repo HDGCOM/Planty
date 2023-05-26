@@ -14,13 +14,6 @@ Template: astra
 #menu-item-81{
     background-color: #DC9F96;
 }
-/*#menu-item-81 a{
-    color: #fff;
-}
-
-#menu-item-81:hover{
-    Background-color: #C02E44;
-}*/
 
 .ast-container, .ast-container-fluid{
     padding-right: 0px !important;
@@ -87,16 +80,15 @@ Template: astra
     justify-content: center;
 }
 
-.menu-item-778, .menu-item-602{
-    
+.menu-item-778{
     background-color: #DC9F96;
 }
 
-.menu-item-778:hover, .menu-item-602:hover{
+.menu-item-778:hover{
     Background-color: #C02E44;
 }
 
-.menu-item-778 a, .menu-item-602 a{
+.menu-item-778 a{
     color: #fff;
 }
 #menu-footer-menu{
@@ -105,12 +97,6 @@ Template: astra
 
 /***Formulaire Commande***/
 
-/*.commande {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 15px;
-}*/
 .order{
     display: flex;
     justify-content: space-between;
@@ -238,16 +224,9 @@ input::-webkit-outer-spin-button {
         margin-bottom: 30px;
         
     }
-
-   /* .livraison {
-      margin-top: 70px;        
-    }*/
-
-
 }
 
 /***Tab***/
-
 
 @media screen and (max-width: 921px){
     .site-header{
