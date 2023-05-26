@@ -61,13 +61,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 ) 
 	);
 
-//Menu Mobile
-/*wp_nav_menu(array(
-    'theme_location' => 'menu_mobile',
-    'container' => 'nav',
-    'container_class' => 'mobile-menu',
-));*/
-
 	/*astra_header_after();*/
 
 	/*astra_content_before();*/

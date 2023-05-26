@@ -28,8 +28,7 @@ add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
 
 function wpb_custom_new_menu() {
 	register_nav_menu('header',__( 'Menu personnalisé' ));
-  register_nav_menu('ftrmenu',__( 'Footer Menu' ));
- // register_nav_menu('menu_mobile',__('Menu Mobile',));
+  register_nav_menu('ftrmenu',__( 'Footer Menu' )); 
   }
   add_action( 'init', 'wpb_custom_new_menu' );
 
@@ -44,7 +43,7 @@ function lien_admin_menu( $items, $args) {
       // link Admin
       $admin_link = admin_url();
       $link_text = 'Admin';
-      $link = '<li><a href="' . $admin_link . '">' . $link_text . '</a></li>';
+      $link = '<li class="menu-item menu-item-type-post_type menu-item-object-page menu-ite"><a href="' . $admin_link . '" class="menu-link">' . $link_text . '</a></li>';
 
       // Insérer le lien après le premier élément du menu
      $items = preg_replace( '/(<li[^>]+>)(.*)(<\/li>)/', '$1$2</li>' . $link . '$3', $items, 1 );
@@ -54,3 +53,20 @@ function lien_admin_menu( $items, $args) {
 }
 
 add_filter( 'wp_nav_menu_items', 'lien_admin_menu', 10, 2 );
+
+function lien_admin_mobile( $items, $args) {
+if ( is_user_logged_in() && current_user_can( 'administrator' ) && $args->theme_location === 'mobile_menu') {
+      
+  // link Admin
+  $admin_link = admin_url();
+  $link_text = 'Admin';
+  $link = '<li class="menu-item menu-item-type-post_type menu-item-object-page menu-ite"><a href="' . $admin_link . '" class="menu-link">' . $link_text . '</a></li>';
+
+  // Insérer le lien après le premier élément du menu
+ $items = preg_replace( '/(<li[^>]+>)(.*)(<\/li>)/', '$1$2</li>' . $link . '$3', $items, 1 );
+}
+
+return $items;
+}
+
+add_filter( 'wp_nav_menu_items', 'lien_admin_mobile', 10, 2 );

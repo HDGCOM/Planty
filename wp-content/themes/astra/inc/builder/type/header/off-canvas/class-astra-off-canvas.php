@@ -39,6 +39,21 @@ class Astra_Off_Canvas {
 	}
 }
 
+//test
+function add_off_canvas_menus() {
+    // Autres configurations de menu hors-champ existantes
+
+    // Ajouter un menu spécifique
+    //Menu Mobile
+	wp_nav_menu(array(
+		'theme_location' => 'menu_mobile',
+		'container' => 'nav',
+		'container_class' => 'mobile-menu',
+	));
+}
+
+//fin test
+
 /**
  *  Kicking this off by creating an object.
  */
