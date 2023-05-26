@@ -10,6 +10,7 @@ Text Domain: astra-child
 Template: astra
 */
 
+
 #menu-item-81{
     background-color: #DC9F96;
 }
@@ -199,6 +200,8 @@ input::-webkit-outer-spin-button {
 /***mobile***/
 
 @media screen and (max-width: 544px){
+
+    
     .site-header{
         width: 100%;
     }
