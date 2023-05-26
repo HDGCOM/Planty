@@ -29,6 +29,7 @@ add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
 function wpb_custom_new_menu() {
 	register_nav_menu('header',__( 'Menu personnalisé' ));
   register_nav_menu('ftrmenu',__( 'Footer Menu' ));
+ // register_nav_menu('menu_mobile',__('Menu Mobile',));
   }
   add_action( 'init', 'wpb_custom_new_menu' );
 
@@ -51,31 +52,5 @@ function lien_admin_menu( $items, $args) {
 
   return $items;
 }
-
-
-//test
-
-/*function lien_admin_menu( $items, $args1, $args2 ) {
-  
-  if ( is_user_logged_in() && current_user_can( 'administrator' ) && $args1->theme_location === 'header' && $args2->theme_location === 'mobile_menu') {
-      
-      // link Admin
-      $admin_link = admin_url();
-      $link_text = 'Admin';
-      $link = '<li><a href="' . $admin_link . '">' . $link_text . '</a></li>';
-
-     if ($args1->theme_location === 'header') {
-      $items = preg_replace( '/(<li[^>]+>)(.*)(<\/li>)/', '$1$2</li>' . $link . '$3', $items, 1 );
-    }
-
-    if ($args2->theme_location === 'mobile_menu') {
-        $items = preg_replace( '/(<li[^>]+>)(.*)(<\/li>)/', '$1$2</li>' . $link . '$3', $items, 1 );
-    }
-  }
-
-  return $items;
-}*/
-
-//fin test
 
 add_filter( 'wp_nav_menu_items', 'lien_admin_menu', 10, 2 );
