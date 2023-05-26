@@ -225,6 +225,7 @@ input::-webkit-outer-spin-button {
 
     #infoliv {
         flex-direction: column;
+        gap: 10px;
     }
 
     .informations , .livraison {
@@ -235,9 +236,9 @@ input::-webkit-outer-spin-button {
         
     }
 
-    .livraison {
+   /* .livraison {
       margin-top: 70px;        
-    }
+    }*/
 
 
 }
@@ -261,6 +262,15 @@ input::-webkit-outer-spin-button {
     .ast-theme-transparent-header #masthead{
         right: 0;
         background-color: #fff;    
+    }
+
+    .footer-class{
+        height: 50px;
+      }
+
+    #infoliv{
+        justify-content: space-around;
+        gap: 30px;
     }
 }
 
