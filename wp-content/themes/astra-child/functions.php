@@ -32,7 +32,7 @@ function wpb_custom_new_menu() {
   }
   add_action( 'init', 'wpb_custom_new_menu' );
 
-//Ajouter un lien
+//Ajouter un lien Desktop
 
 function lien_admin_menu( $items, $args) {
   
@@ -53,6 +53,8 @@ function lien_admin_menu( $items, $args) {
 }
 
 add_filter( 'wp_nav_menu_items', 'lien_admin_menu', 10, 2 );
+
+//Ajouter un lien Tab et Mobile
 
 function lien_admin_mobile( $items, $args) {
 if ( is_user_logged_in() && current_user_can( 'administrator' ) && $args->theme_location === 'mobile_menu') {
