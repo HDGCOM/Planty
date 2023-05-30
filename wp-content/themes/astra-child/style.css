@@ -254,5 +254,10 @@ input::-webkit-outer-spin-button {
         justify-content: space-around;
         gap: 30px;
     }
+
+    .elementor-image-box-wrapper{
+        flex-direction: column !important;
+        text-align: center !important;
+    }
 }
 
