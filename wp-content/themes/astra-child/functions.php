@@ -38,7 +38,7 @@ function lien_admin_menu( $items, $args) {
   
   // Si l'utilisateur est connecté et s'il est administrateur et spécifier le menu d'affichage
  
-  if ( is_user_logged_in() && current_user_can( 'administrator' ) && $args->theme_location === 'header') {
+  if ( is_user_logged_in() && current_user_can( 'administrator' ) && ($args->theme_location === 'header'||$args->theme_location === 'mobile_menu')) {
       
       // link Admin
       $admin_link = admin_url();
@@ -56,7 +56,7 @@ add_filter( 'wp_nav_menu_items', 'lien_admin_menu', 10, 2 );
 
 //Ajouter un lien Tab et Mobile
 
-function lien_admin_mobile( $items, $args) {
+/*function lien_admin_mobile( $items, $args) {
 if ( is_user_logged_in() && current_user_can( 'administrator' ) && $args->theme_location === 'mobile_menu') {
       
   // link Admin
@@ -71,4 +71,4 @@ if ( is_user_logged_in() && current_user_can( 'administrator' ) && $args->theme_
 return $items;
 }
 
-add_filter( 'wp_nav_menu_items', 'lien_admin_mobile', 10, 2 );
+add_filter( 'wp_nav_menu_items', 'lien_admin_mobile', 10, 2 );*/
